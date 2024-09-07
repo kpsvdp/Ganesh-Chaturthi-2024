@@ -7,9 +7,23 @@
 	font-family: 'Protest Guerrilla';
 }
 
-#background-audio {
-    display: none; /* This hides the audio player */
+/* Background Video */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
+
+
+/* Background Audio - No visual representation needed */
+#background-audio {
+    display: none;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -29,13 +43,11 @@ header video {
     
 }
 
-
 .centerimg{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 }
 
 .centerimg h2{
@@ -58,7 +70,6 @@ header video {
 }
 
 @media (max-width: 640px){
-
 
 .centerimg{
 	margin-top: 60px;
