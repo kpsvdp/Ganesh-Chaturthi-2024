@@ -34,5 +34,11 @@
 		</h2>
 	</div>
 </header>
+	<!-- Debugging info -->
+    <script>
+        const audio = document.getElementById('background-audio');
+        audio.addEventListener('play', () => console.log('Audio is playing'));
+        audio.addEventListener('error', (e) => console.log('Error playing audio:', e));
+    </script>
 </body>
 </html>
