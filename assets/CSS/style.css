@@ -59,7 +59,7 @@ header video {
 	font-family: 'Protest Guerrilla';
 	animation: ganeshji 5s infinite;
 }
-@keyframes ganeshji {
+@keyframes ganesh {
 	0%{color: white;}
 	20%{color: pink;}
 	40%{color: orange;}
@@ -67,20 +67,55 @@ header video {
 	80%{color: red;}
 	100%{color: greenyellow;}
 }
+/* Mobile Devices */
+@media (max-width: 640px) {
+    .centerimg {
+        margin-top: 60px;
+    }
 
-@media (max-width: 640px){
+    .centerimg img {
+        width: 250px;
+    }
 
-.centerimg{
-	margin-top: 60px;
+    .centerimg h2 {
+        font-size: 1.2em;
+        word-spacing: 0px;
+        width: 200%;
+    }
 }
 
-.centerimg img{
-	width: 250px;
+/* Tablets and Small Desktops */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .centerimg {
+        margin-top: 80px;
+    }
+
+    .centerimg img {
+        width: 300px;
+    }
+
+    .centerimg h2 {
+        font-size: 1.3em;
+        word-spacing: 5px;
+        width: 150%;
+    }
 }
 
-.centerimg h2{
-	font-size: 1.2em;
-	word-spacing: 0px;
-	width: 200%;
+/* Large Desktops */
+@media (min-width: 1025px) {
+    .centerimg {
+        margin-top: 100px;
+    }
+
+    .centerimg img {
+        width: 350px;
+    }
+
+    .centerimg h2 {
+        font-size: 1.4em;
+        word-spacing: 10px;
+        width: 100%;
+    }
 }
-}
+
+
