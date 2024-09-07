@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Ganesh </title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ganesh</title>
 	<link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Protest Guerrilla" rel="stylesheet">
 </head>
 <body>
-	<audio id="background-audio" autoplay >
-		<source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.mp3" type="audio/mpeg">
-		<source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.wav" type="audio/wav">
-		<source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.ogg" type="audio/ogg">
-		Your browser does not support the audio tag.
-	</audio>
-
-<header>
-	<video autoplay >
-        <source src="Images/video1.mp4" type="video/mp4">
+	<!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+		<source src="Images/video1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+	 <!-- Background Audio -->
+	 <audio autoplay loop id="background-audio">
+        <source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.mp3" type="audio/mpeg">
+		<source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.wav" type="audio/wav">
+		<source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.ogg" type="audio/ogg">
+        Your browser does not support the audio tag.
+    </audio>
+
+	<!-- Content -->
 	<div class="centerimg">
 		<img src="Images/g1.png" width="600px">
 		<h2>
@@ -26,7 +31,6 @@
 			 Nirvighnam Kuru Me Deva Sarva-Kaaryeshu Sarvadaa ||
 			 <BR>
 				"Happy Ganesh Chaturthi"
-
 		</h2>
 	</div>
 </header>
