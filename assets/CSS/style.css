@@ -10,11 +10,12 @@
 /* Background Video */
 #background-video {
     position: absolute;
-    
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+    z-index: -1;
 }
 
 
@@ -59,7 +60,7 @@ header video {
 	font-family: 'Protest Guerrilla';
 	animation: ganeshji 5s infinite;
 }
-@keyframes ganesh {
+@keyframes ganeshji {
 	0%{color: white;}
 	20%{color: pink;}
 	40%{color: orange;}
@@ -67,8 +68,8 @@ header video {
 	80%{color: red;}
 	100%{color: greenyellow;}
 }
-/* Mobile Devices */
-@media (max-width: 640px) {
+/* iPhone 12/13/14 Mini and iPhone X/XS */
+@media (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
     .centerimg {
         margin-top: 60px;
     }
@@ -84,23 +85,39 @@ header video {
     }
 }
 
-/* Tablets and Small Desktops */
-@media (min-width: 641px) and (max-width: 1024px) {
+/* Android devices (e.g., Galaxy S10) */
+@media (min-device-width: 360px) and (max-device-width: 800px) and (-webkit-device-pixel-ratio: 3) {
     .centerimg {
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
     .centerimg img {
-        width: 300px;
+        width: 250px;
     }
 
     .centerimg h2 {
-        font-size: 1.3em;
-        word-spacing: 5px;
+        font-size: 1.2em;
+        word-spacing: 0px;
         width: 100%;
     }
 }
 
+/* General Mobile Devices (for screens smaller than 640px width) */
+@media (max-width: 640px) {
+    .centerimg {
+        margin-top: 60px;
+    }
+
+    .centerimg img {
+        width: 250px;
+    }
+
+    .centerimg h2 {
+        font-size: 1.2em;
+        word-spacing: 0px;
+        width: 100%;
+    }
+}
 @media (max-width: 640px){
 
 .centerimg{
