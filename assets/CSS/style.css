@@ -10,12 +10,11 @@
 /* Background Video */
 #background-video {
     position: absolute;
-    top: 0;
-    left: 0;
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    
 }
 
 
@@ -98,25 +97,26 @@ header video {
     .centerimg h2 {
         font-size: 1.3em;
         word-spacing: 5px;
-        width: 150%;
-    }
-}
-
-/* Large Desktops */
-@media (min-width: 1025px) {
-    .centerimg {
-        margin-top: 100px;
-    }
-
-    .centerimg img {
-        width: 350px;
-    }
-
-    .centerimg h2 {
-        font-size: 1.4em;
-        word-spacing: 10px;
         width: 100%;
     }
 }
+
+@media (max-width: 640px){
+
+.centerimg{
+	margin-top: 60px;
+}
+
+.centerimg img{
+	width: 250px;
+}
+
+.centerimg h2{
+	font-size: 1.2em;
+	word-spacing: 0px;
+	width: 200%;
+}
+}
+
 
 
