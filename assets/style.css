@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Protest Guerrilla';
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url('Video/video1.mp4');
+	background-size: 100% 100%
+}
+
+
+.centerimg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.centerimg h2{
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: 500;
+	word-spacing: 10px;
+	font-family: 'Protest Guerrilla';
+	animation: ganeshji 5s infinite;
+}
+@keyframes ganeshji {
+	0%{color: white;}
+	20%{color: pink;}
+	40%{color: orange;}
+	60%{color: green;}
+	80%{color: red;}
+	100%{color: greenyellow;}
+}
+
+@media (max-width: 640px){
+
+
+.centerimg{
+	margin-top: 60px;
+}
+
+.centerimg img{
+	width: 250px;
+}
+
+.centerimg h2{
+	font-size: 1.2em;
+	word-spacing: 0px;
+	width: 200%;
+}
+}
