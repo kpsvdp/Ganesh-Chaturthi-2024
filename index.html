@@ -22,25 +22,25 @@
             Nirvighnam Kuru Me Deva Sarva-Kaaryeshu Sarvadaa ||<br>
             "Happy Ganesh Chaturthi"
         </h2>
-        <!-- Unmute Button -->
-        <button id="unmuteAudio">Unmute Music</button>
+        <!-- Play Button to start the audio -->
+        <button id="playAudio">Play Music</button>
     </div>
 
     <!-- Background Audio -->
-    <audio id="background-audio" autoplay loop muted>
+    <audio id="background-audio" loop>
         <source src="Music/Shree-Vakratunda-Mahakaya-Suresh-Wadkar.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio>
 
     <!-- Debugging info -->
     <script>
-        const unmuteButton = document.getElementById('unmuteAudio');
+        const playButton = document.getElementById('playAudio');
         const audio = document.getElementById('background-audio');
 
-        // Unmute the audio when the user clicks the button
-        unmuteButton.addEventListener('click', () => {
-            audio.muted = false;
-            unmuteButton.style.display = 'none'; // Hide the unmute button after unmuting
+        // Play the audio when the user clicks the button
+        playButton.addEventListener('click', () => {
+            audio.play();
+            playButton.style.display = 'none'; // Hide the play button after playing audio
         });
 
         // Log audio events
